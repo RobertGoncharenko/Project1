@@ -1,11 +1,10 @@
 import './styles/index.scss'
 import { Route, Routes, Link} from 'react-router-dom';
-import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
-import { MainPageAsync } from './pages/MainPage/MainPage.async';
+import { AboutPageAsync } from 'pages/AboutPage/AboutPage.async';
+import { MainPageAsync } from 'pages/MainPage/MainPage.async';
 import { Suspense, useContext } from 'react';
-import { Theme, ThemeContext } from './theme/ThemeContext';
-import { useTheme } from './theme/useTheme';
-import { classNames } from './helpers/className/classNames';
+import { classNames } from 'helpers/className/classNames';
+import { useTheme } from './providers/ThemeProvider';
 
 
 const App = () => {
