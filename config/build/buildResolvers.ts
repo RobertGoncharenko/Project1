@@ -10,5 +10,4 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
     mainFields: ['index'],
     alias: {}
   }
-
 }
